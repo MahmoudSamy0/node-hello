@@ -7,13 +7,15 @@
     "start": "node index.js",
     "lint": "eslint ."
   },
-
-"repository": {
-  "type": "git",
-  "url": "git+https://github.com/MahmoudSamy0/node-hello.git"
-},
-"bugs": {
-  "url": "https://github.com/MahmoudSamy0/node-hello/issues"
-},
-"homepage": "https://github.com/MahmoudSamy0/node-hello#readme"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MahmoudSamy0/node-hello.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MahmoudSamy0/node-hello/issues"
+  },
+  "homepage": "https://github.com/MahmoudSamy0/node-hello#readme",
+  "devDependencies": {
+    "eslint": "^9.32.0"
+  }
 }
