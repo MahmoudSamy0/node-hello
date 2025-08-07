@@ -38,4 +38,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: mahmoudsamy0/node-hello:latest
+          tags: mahmoudsami726/node-hello:latest
