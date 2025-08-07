@@ -48,3 +48,5 @@ jobs:
           pcc_user: "admin"
           pcc_pass: "AdminP@$$w0rd"
           image_name: mahmoudsami726/node-hello:latest
+          insecure: true
+
