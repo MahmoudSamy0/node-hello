@@ -40,3 +40,11 @@ jobs:
           context: .
           push: true
           tags: mahmoudsami726/node-hello:latest
+      - name: Prisma Cloud image scan
+        id: scan
+        uses: PaloAltoNetworks/prisma-cloud-scan@v1.5
+        with:
+          pcc_console_url: "https://65.108.157.51:32234"
+          pcc_user: "admin"
+          pcc_pass: "AdminP@$$w0rd"
+          image_name: mahmoudsami726/node-hello:latest
