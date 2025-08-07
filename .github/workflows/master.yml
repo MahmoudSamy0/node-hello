@@ -1,4 +1,4 @@
-name:  samy CI/CD Pipeline
+name:  samy's CI/CD Pipeline
 
 on:
   push:
