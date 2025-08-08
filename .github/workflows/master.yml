@@ -50,10 +50,7 @@ jobs:
       - name: Terraform Init
         working-directory: terraform
         run: terraform init
-      - name: Terraform Import IAM Role
-        working-directory: terraform
-        run: terraform import aws_iam_role.ecs_task_execution_role ecsTaskExecutionRole || true  
-
+       
       - name: Terraform Apply
         working-directory: terraform
         run: terraform apply -auto-approve     
