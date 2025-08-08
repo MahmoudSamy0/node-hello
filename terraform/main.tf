@@ -33,8 +33,8 @@ resource "aws_security_group" "ecs_sg" {
   vpc_id      = aws_vpc.main.id
 
   ingress {
-    from_port   = 9000
-    to_port     = 9000
+    from_port   = 3000
+    to_port     = 3000
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
@@ -66,7 +66,7 @@ resource "aws_ecs_task_definition" "hello" {
       essential = true
       portMappings = [
         {
-          containerPort = 9000
+          containerPort = 3000
           protocol      = "tcp"
         }
       ]
