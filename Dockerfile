@@ -9,9 +9,9 @@ COPY . .
 
 # Install app dependencies
 RUN npm install
-test
+
 # Expose the port your app runs on
-EXPOSE 3000
+EXPOSE 9000
 
 # Start the app
 CMD ["node", "index.js"]
