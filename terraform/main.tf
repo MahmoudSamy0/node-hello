@@ -22,8 +22,8 @@ resource "aws_security_group" "ecs_sg" {
   vpc_id      = data.aws_vpc.default.id
 
   ingress {
-    from_port   = 4000
-    to_port     = 4000
+    from_port   = 3000
+    to_port     = 3000
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
@@ -53,7 +53,7 @@ resource "aws_ecs_task_definition" "hello" {
     image     = var.docker_image
     essential = true
     portMappings = [{
-      containerPort = 4000
+      containerPort = 3000
       protocol      = "tcp"
     }]
   }])
