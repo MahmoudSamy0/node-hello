@@ -50,5 +50,5 @@ jobs:
 
       - name: Terraform Apply
         working-directory: terraform
-        run: terraform apply -auto-approve -var="docker_image=mahmoudsami726/node-hello:latest"    
+        run: terraform apply -auto-approve     
 
