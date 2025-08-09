@@ -62,6 +62,7 @@ AWS infrastructure provisioning using Terraform, and monitoring integration with
 ## Installation Setup
 
 **1. Forked the Node.js "hello world" application: node-hello**
+
     ➢ Go to the original repo.
 
 ```
